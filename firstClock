@@ -5,7 +5,9 @@ from pygame import mixer
 mixer.init()
 
 
-
+def sounds():
+    sound = mixer.Sound("src/02599.wav")
+    sound.play()
 
 seconds = input("Hello, Sir! Please, enter seconds: ")
 delay = float(seconds)
@@ -16,7 +18,6 @@ time.sleep(1.1)
 print("Your task ",task," Ready!")
 print("Vremya poshlo...")
 time.sleep(delay)
-sound = mixer.Sound("src/02599.wav")
-sound.play()
+sounds()
 
 time.sleep(15)
